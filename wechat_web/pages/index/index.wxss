@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 200rpx;
+  margin-top: 100rpx;
+  margin-bottom: 50rpx;
 }
 
 .userinfo-avatar {
@@ -17,20 +18,9 @@
   color: #aaa;
 }
 
-.beginexperience {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 200rpx;
-}
-.experience-pay {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 200rpx;
-}
-.experience-history {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.button-sp-area{
+    margin: 50rpx auto;
+    padding-top: 15px;
+    width: 60%;
 }

@@ -3,15 +3,9 @@
 var app = getApp()
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {}
   },
   //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
   onLoad: function () {
     console.log('onLoad')
     var that = this
@@ -21,6 +15,25 @@ Page({
       that.setData({
         userInfo:userInfo
       })
+    })
+  },
+  viewUserinfo: function() {
+    wx.navigateTo({
+      url: '../userinfo/userinfo'
+    })
+  },
+  beginExperience: function() {
+    wx.navigateTo({
+      url: '../experiencing/experiencing',
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
     })
   }
 })

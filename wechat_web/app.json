@@ -1,12 +1,13 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/userinfo/userinfo",
+    "pages/experiencing/experiencing"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "3D打印笔体验卡",
     "navigationBarTextStyle":"black"
   }
 }
