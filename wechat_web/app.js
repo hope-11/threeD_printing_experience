@@ -17,6 +17,8 @@ App({
           wx.getUserInfo({
             success: function (res) {
               that.globalData.userInfo = res.userInfo
+              //设置用户类型为1
+              that.globalData.userInfo.usertype=1
               typeof cb == "function" && cb(that.globalData.userInfo)
             }
           })

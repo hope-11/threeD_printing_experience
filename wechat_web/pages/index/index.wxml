@@ -1,37 +1,18 @@
-<!--index.wxml-->
-<view class="page__hd page__bd_spacing">
-  <view bindtap="viewUserinfo" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-</view>
-<view class="page__bd page__bd_spacing">
-  <view class="weui-flex">
-    <view class="weui-flex__item" style="text-align: center;">
-      <text>您还剩余3次体验时间</text>
-    </view>
-  </view>
-  
-  <view class="weui-flex">
-    <view class="weui-flex__item">
-      <button type="primary" bindtap="beginExperience">开始体验</button>
-    </view>
-  </view>
+<!--pages/index/index.wxml-->
+<view class="page__bd">
+    <view class="weui-footer weui-footer_fixed-bottom"> 
+        <view class="weui-flex">
+            <view class="weui-flex__item logo-container" bindtap="getUserInfo">
+                <image class="logo" src="../image/logo.png" mode="aspectFit"></image>
+            </view>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item slogan-container">
+                <text>————无限可能  用心创造————</text>
+            </view>
+        </view>
 
-  <view class="weui-flex">
-    <view class="weui-flex__item">
-    <view class="button-sp-area">
-      <button class="weui-btn" type="default" plain="true">月卡（100元/4次）</button>
-      <button class="weui-btn" type="default" plain="true">单次（ 30元/1次）</button>
+        <view class="weui-footer__text">Copyright © 2014-2017 boxjet3d.com</view>
     </view>
-    </view>
-  </view>
 
-  <view class="weui-footer weui-footer_fixed-bottom">
-    <view class="weui-footer__links">
-      <navigator url="" class="weui-footer__link">充值记录</navigator>
-      <navigator url="" class="weui-footer__link">体验历史</navigator>
-    </view>
-    <view class="weui-footer__text">Copyright © 2014-2017 boxjet3d.com</view>
-  </view>
 </view>
