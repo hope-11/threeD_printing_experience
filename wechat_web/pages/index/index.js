@@ -2,7 +2,7 @@
 var app = getApp()
 Page({
   data: {
-    userInfo: {}
+    userInfo: wx.getStorageSync('user')
   },
   onLoad:function(options){
     var that = this

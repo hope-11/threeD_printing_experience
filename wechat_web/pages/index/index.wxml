@@ -1,5 +1,6 @@
 <!--pages/index/index.wxml-->
 <view class="page__bd">
+--{{userInfo}}--
     <view class="weui-footer weui-footer_fixed-bottom"> 
         <view class="weui-flex">
             <view class="weui-flex__item logo-container" bindtap="getUserInfo">

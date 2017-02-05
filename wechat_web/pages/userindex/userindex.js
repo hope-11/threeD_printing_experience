@@ -1,9 +1,9 @@
-//index.js
+//userindex.js
 //获取应用实例
 var app = getApp()
 Page({
   data: {
-    userInfo: globalData
+    userInfo: wx.getStorageSync('user')
   },
   //事件处理函数
   onLoad: function () {
