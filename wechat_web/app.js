@@ -1,30 +1,31 @@
 //app.js
 App({
   onLaunch: function () {
-    wx.login({
-      success: function(res){
-        if(res.code){
+  },
+
+  getUserInfo: function(cb){
+    var that = this
+    if(this.globalData.userInfo){
+      typeof cb == "function" && cb(this.globalData.userInfo)
+    }else{
+      //调用登录接口
+      wx.login({
+        success: function () {
           wx.getUserInfo({
-            success: function(res){
-              // 将用户信息存入本地缓存
-              var userInfo=res.userInfo
-              wx.setStorageSync('userInfo', userInfo)
+            success: function (res) {
+              that.globalData.userInfo = res.userInfo
+              wx.setStorageSync('userInfo', res.userInfo)
+              typeof cb == "function" && cb(that.globalData.userInfo)
             },
-            fail: function() {
-              // fail
-            },
-            complete: function() {
-              // complete
+            fail: function(){
+              wx.navigateBack()
             }
           })
         }
-      },
-      fail: function() {
-        // fail
-      },
-      complete: function() {
-        // complete
-      }
-    })
+      })
+    }
+  },
+  globalData:{
+    userInfo:null
   }
 })

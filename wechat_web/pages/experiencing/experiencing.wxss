@@ -1,1 +1,17 @@
 /* pages/experiencing/experiencing.wxss */
+.rest_time_text {
+    padding-top: 40px;
+    padding-left: 80px;
+}
+
+.rest_time {
+    text-align: center;
+    font-size: 128pt;
+    line-height: 160px;
+}
+.rest_time_unit {
+    padding-top: 120px;
+}
+ .weui-progress{
+     border-radius: 5px;
+ }

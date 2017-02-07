@@ -1,2 +1,52 @@
 <!--pages/experiencing/experiencing.wxml-->
+<view class="page__bd">
+  <view class="weui-flex">
+    <view class="weui-flex__item rest_time_text">
+      <text>本次体验还剩余</text>
+    </view>
+  </view>
 
+  <view class="weui-flex">
+    <view class="weui-flex__item">
+      <text></text>
+    </view>
+    <view class="weui-flex__item">
+      <text class="rest_time">45</text>
+    </view>
+    <view class="weui-flex__item rest_time_unit">
+      <text>分钟</text>
+    </view>
+  </view>
+</view>
+
+<view class="page__bd page__bd_spacing">
+  <view class="weui-progress">
+    <view class="weui-progress__bar">
+        <progress percent="25" stroke-width="10" />
+    </view>
+  </view>
+</view>
+
+<view class="page__bd page__bd_spacing">
+  <view class="weui-article">
+    <view class="weui-article__h1">注意事项</view>
+    <view class="weui-article__p">
+      1. 使用前先将喷头加热到180℃
+    </view>
+    <view class="weui-article__p">
+      2. 
+    </view>
+    <view class="weui-article__p">
+      3. 
+    </view>
+    <view class="weui-article__p">
+      4. 
+    </view>
+    <view class="weui-article__p">
+      5. 
+    </view>
+    <view class="weui-article__p">
+      6. 
+    </view>
+  </view>
+</view>
