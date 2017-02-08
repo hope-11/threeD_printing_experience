@@ -1,0 +1,5 @@
+/* pages/experiencend/experiencend.wxss */
+.button-sp-area{
+    margin: 0 auto;
+    width: 60%;
+}

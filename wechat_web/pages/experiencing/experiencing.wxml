@@ -11,7 +11,7 @@
       <text></text>
     </view>
     <view class="weui-flex__item">
-      <text class="rest_time">45</text>
+      <text class="rest_time">{{restTime}}</text>
     </view>
     <view class="weui-flex__item rest_time_unit">
       <text>分钟</text>

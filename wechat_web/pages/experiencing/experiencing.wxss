@@ -12,6 +12,3 @@
 .rest_time_unit {
     padding-top: 120px;
 }
- .weui-progress{
-     border-radius: 5px;
- }

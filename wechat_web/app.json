@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/userinfo/userinfo",
-    "pages/experiencing/experiencing"
+    "pages/experiencing/experiencing",
+    "pages/experiencend/experiencend"
   ],
   "window":{
     "backgroundTextStyle":"light",

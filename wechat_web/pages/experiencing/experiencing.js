@@ -1,8 +1,15 @@
 // pages/experiencing/experiencing.js
 Page({
-  data:{},
+  data:{
+    restTime: 60
+  },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
+      setInterval(function(){
+    //var restTime=Page.data.restTime
+    console.log(1)
+    //this.setData({restTime: this.getData.restTime-1})
+  }, 1000)
   },
   onReady:function(){
     // 页面渲染完成
@@ -16,4 +23,5 @@ Page({
   onUnload:function(){
     // 页面关闭
   }
+
 })
